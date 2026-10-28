@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manghat Dairy Farm | Fresh farm milk delivered in Faisalabad</title>
+<meta name="description" content="Manghat Dairy Farm, Ghulam Muhammad Abad, Faisalabad. Fresh milk only, free home delivery, cash on delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--milk:#f6faf8;--pasture:#2f7d4f;--barn:#0e2c21;--sky:#d3ebf6;--butter:#f4c33f;--ink:#16261f;--line:#d6e3dc}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1.05rem/1.65 "Figtree",system-ui,sans-serif;color:var(--ink);background:var(--milk)}
+h1,h2,h3{font-family:"Bricolage Grotesque","Figtree",sans-serif;line-height:1.1;letter-spacing:-.02em}
+[lang=ur] body,[lang=ur] h1,[lang=ur] h2,[lang=ur] h3,[lang=ur] button,[lang=ur] summary{font-family:"Noto Nastaliq Urdu",serif;line-height:2;letter-spacing:0}
+[lang=ur] h1{line-height:1.7}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+header{position:sticky;top:0;z-index:10;background:rgba(246,250,248,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 1.1rem "Bricolage Grotesque",sans-serif;margin-inline-end:auto}
+.brand img,.brand svg{width:42px;height:42px;object-fit:contain}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--pasture)}
+.btn{display:inline-block;border:0;border-radius:999px;padding:.7em 1.4em;font:600 1rem "Figtree",sans-serif;text-decoration:none;cursor:pointer;background:var(--butter);color:var(--barn);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--barn);box-shadow:inset 0 0 0 2px var(--barn)}
+.btn[aria-disabled=true]{opacity:.65;pointer-events:none}
+.lang{background:none;border:1px solid var(--line);border-radius:8px;padding:.35em .8em;font:600 .9rem "Figtree",sans-serif;cursor:pointer;color:var(--ink)}
+.menu{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--ink)}
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4.2rem);font-weight:800;color:var(--barn)}
+.hero p.lead{margin:20px 0 28px;font-size:1.2rem;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;list-style:none;padding:0}
+.pills li{background:#e4f1ea;border-radius:999px;padding:.35em 1em;font-weight:600;font-size:.92rem;color:var(--pasture)}
+.map{background:var(--sky);border-radius:32px;padding:14px;position:relative}
+.map svg{display:block;width:100%;height:auto;border-radius:22px}
+.eta{position:absolute;inset-inline:26px;bottom:26px;background:#fff;border-radius:18px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 6px 24px rgba(14,44,33,.14)}
+.eta b{font:700 1.05rem "Bricolage Grotesque",sans-serif;display:block}
+.eta small{color:#52665c}
+.eta span{background:var(--pasture);color:#fff;border-radius:12px;padding:.3em .8em;font-weight:600;font-size:.9rem;white-space:nowrap}
+section{padding:80px 0}
+h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;color:var(--barn);margin-bottom:40px;max-width:18ch}
+.why{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--barn)}
+.why div{padding:28px 28px 28px 0;border-bottom:1px solid var(--line)}
+.why div:nth-child(odd){border-inline-end:1px solid var(--line)}
+.why div:nth-child(even){padding-inline-start:28px}
+.why h3{font-size:1.35rem;margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;list-style:none;padding:0;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding-top:56px}
+.steps li::before{content:counter(s);position:absolute;top:0;inset-inline-start:0;width:42px;height:42px;border-radius:50%;background:var(--pasture);color:#fff;display:grid;place-items:center;font:700 1.1rem "Bricolage Grotesque",sans-serif}
+.steps li::after{content:"";position:absolute;top:20px;inset-inline-start:54px;inset-inline-end:-12px;border-top:2px dashed var(--line)}
+.steps li:last-child::after{display:none}
+.steps h3{font-size:1.15rem;margin-bottom:4px}
+.plan{background:var(--barn);color:var(--milk)}
+.plan h2{color:var(--milk)}
+.plan .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.plan label{display:block;font-weight:600;margin-bottom:6px}
+.row{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.row output{font:800 2rem "Bricolage Grotesque",sans-serif;min-width:3.4ch;color:var(--butter)}
+input[type=range]{flex:1;accent-color:var(--butter);height:28px}
+input[type=number]{width:7em;padding:.5em .7em;border-radius:10px;border:0;font:600 1rem "Figtree",sans-serif}
+.total{background:var(--milk);color:var(--barn);border-radius:28px;padding:34px}
+.total strong{display:block;font:800 clamp(2.4rem,6vw,3.6rem) "Bricolage Grotesque",sans-serif;line-height:1.1;margin:6px 0 10px;color:var(--pasture)}
+.total small{color:#52665c}
+.about{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.about h2{margin-bottom:0}
+.about p+p{margin-top:14px}
+.owner{margin-top:22px;padding-inline-start:16px;border-inline-start:4px solid var(--butter);font-weight:600}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+details:first-of-type{border-top:2px solid var(--barn)}
+summary{cursor:pointer;font:700 1.15rem "Bricolage Grotesque",sans-serif;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;transition:transform .2s;color:var(--pasture)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:10px;max-width:60ch}
+.contact{background:var(--sky);border-radius:36px;padding:56px 40px;text-align:center}
+.contact h2{margin-inline:auto}
+.contact .cta{justify-content:center;margin-top:22px}
+.contact address{font-style:normal;margin-top:22px;font-weight:600}
+footer{padding:28px 0 90px;text-align:center;color:#52665c;font-size:.92rem}
+footer .soc a{margin:0 8px;font-weight:600}
+.fab{position:fixed;inset-inline-end:18px;bottom:18px;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:9}
+.fab svg{width:30px;height:30px;fill:#fff}
+@keyframes ping{0%{r:7;opacity:.6}100%{r:26;opacity:0}}
+.pulse{animation:ping 1.8s ease-out infinite}
+@media(max-width:860px){
+.hero .wrap,.plan .grid,.about{grid-template-columns:1fr;gap:32px}
+.steps{grid-template-columns:1fr 1fr;row-gap:36px}.steps li::after{display:none}
+.why{grid-template-columns:1fr}.why div,.why div:nth-child(even){padding-inline:0;border-inline-end:0}
+.menu{display:block}
+nav{display:none;position:absolute;top:68px;inset-inline:0;background:var(--milk);flex-direction:column;padding:12px 20px 20px;border-bottom:1px solid var(--line);gap:14px}
+nav.open{display:flex}
+.bar>.btn{display:none}
+section{padding:56px 0}.contact{padding:40px 20px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="brand" href="#top" aria-label="Manghat Dairy Farm">
+<img src="logo.png" alt="Manghat Dairy Farm logo" onerror="this.style.display='none';document.getElementById('mark').style.display='block'">
+<svg id="mark" style="display:none" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4C16 15 9 22 9 31a15 15 0 0 0 30 0C39 22 32 15 24 4z" fill="#2f7d4f"/><path d="M17 33a7 7 0 0 0 7 7" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+<span data-i="brand">Manghat Dairy Farm</span>
+</a>
+<nav id="nav">
+<a href="#why" data-i="n1">Why us</a><a href="#how" data-i="n2">How it works</a><a href="#plan" data-i="n3">Milk planner</a><a href="#faq" data-i="n4">Questions</a>
+</nav>
+<a class="btn wa" href="#" data-i="wa">Order on WhatsApp</a>
+<button class="lang" id="lang" aria-label="Language">اردو</button>
+<button class="menu" id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+</div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1 data-i="h1">Fresh farm milk, at your door every morning.</h1>
+<p class="lead" data-i="lead">Only fresh milk, straight from our farm in Ghulam Muhammad Abad. Free delivery, and you pay when it arrives.</p>
+<div class="cta">
+<a class="btn wa" href="#" data-i="wa">Order on WhatsApp</a>
+<a class="btn alt" id="app" href="#" data-i="app">Get the app</a>
+</div>
+<ul class="pills"><li data-i="p1">Free home delivery</li><li data-i="p2">Cash on delivery</li><li data-i="p3">Live delivery tracking</li></ul>
+</div>
+<div class="map" role="img" aria-label="Preview of live delivery tracking">
+<svg viewBox="0 0 480 400">
+<rect width="480" height="400" fill="#eaf5ee"/>
+<g stroke="#fff" stroke-width="16" fill="none" stroke-linecap="round"><path d="M0 120H480M0 270H480M110 0V400M330 0V400M0 360L480 40"/></g>
+<rect x="130" y="140" width="180" height="110" rx="10" fill="#cfe6d8"/>
+<rect x="350" y="150" width="100" height="100" rx="10" fill="#cfe6d8"/>
+<rect x="20" y="150" width="70" height="100" rx="10" fill="#cfe6d8"/>
+<path id="route" d="M60 340C60 270 110 270 110 200S110 120 200 120 330 120 330 60 400 50 410 50" fill="none" stroke="#2f7d4f" stroke-width="7" stroke-linecap="round" stroke-dasharray="2 14"/>
+<g transform="translate(410 50)"><circle r="20" fill="#0e2c21"/><path d="M-9 2L0-8 9 2V9H-9z" fill="#f4c33f"/></g>
+<circle r="7" fill="#f4c33f" opacity=".6" class="pulse"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear"><mpath href="#route"/></animateMotion></circle>
+<circle r="11" fill="#f4c33f" stroke="#0e2c21" stroke-width="4"><animateMotion dur="9s" repeatCount="indefinite" calcMode="linear"><mpath href="#route"/></animateMotion></circle>
+</svg>
+<div class="eta"><div><b data-i="t1">Your milk is on the way</b><small data-i="t2">Live tracking preview</small></div><span data-i="t3">3 stops away</span></div>
+</div>
+</div></div>
+
+<section id="why"><div class="wrap">
+<h2 data-i="whyh">Why families choose Manghat Dairy</h2>
+<div class="why">
+<div><h3 data-i="w1">One product, done right</h3><p data-i="w1p">We sell fresh milk only, so all our care goes into one thing.</p></div>
+<div><h3 data-i="w2">Free home delivery</h3><p data-i="w2p">Delivered to your door at no extra charge.</p></div>
+<div><h3 data-i="w3">Pay when it arrives</h3><p data-i="w3p">Cash on delivery. No cards and no advance payments.</p></div>
+<div><h3 data-i="w4">Track your milk</h3><p data-i="w4p">Follow your delivery on the map in our app.</p></div>
+</div>
+</div></section>
+
+<section id="how" style="padding-top:0"><div class="wrap">
+<h2 data-i="howh">How it works</h2>
+<ol class="steps">
+<li><h3 data-i="s1">Download the app</h3><p data-i="s1p">Sign up with your mobile number.</p></li>
+<li><h3 data-i="s2">Choose your milk</h3><p data-i="s2p">Set a daily quantity or order once.</p></li>
+<li><h3 data-i="s3">Track the delivery</h3><p data-i="s3p">Watch your delivery man arrive.</p></li>
+<li><h3 data-i="s4">Pay on delivery</h3><p data-i="s4p">Pay cash, or settle monthly. Your bill is always in the app.</p></li>
+</ol>
+</div></section>
+
+<section id="plan" class="plan"><div class="wrap grid">
+<div>
+<h2 data-i="planh">Plan your monthly milk</h2>
+<label for="lit" data-i="l1">Litres per day</label>
+<div class="row"><input id="lit" type="range" min="0.5" max="6" step="0.5" value="1.5"><output id="litv">1.5</output></div>
+<label for="price" data-i="l2">Price per litre (Rs.)</label>
+<input id="price" type="number" min="0" inputmode="numeric">
+</div>
+<div class="total" aria-live="polite">
+<span data-i="l3">Estimated for 30 days</span>
+<strong id="tot">Rs. 0</strong>
+<small data-i="l4">An estimate only. Your final bill follows the deliveries you receive.</small>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<h2 data-i="abh">From our farm to your home</h2>
+<div>
+<p data-i="ab1">Manghat Dairy Farm is run by Dr. Qurban Ali Manghat in Ghulam Muhammad Abad, Faisalabad. We focus on one thing: fresh milk, delivered with honesty and care.</p>
+<p data-i="ab2">Now we are going digital, with easy ordering, clear bills and live delivery tracking in one app.</p>
+<p class="owner" data-i="own">Dr. Qurban Ali Manghat, Owner</p>
+</div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+<h2 data-i="faqh">Questions, answered</h2>
+<details><summary data-i="q1">How do I order?</summary><p data-i="a1">Message us on WhatsApp today. Soon you will also be able to order from our app.</p></details>
+<details><summary data-i="q2">Is delivery really free?</summary><p data-i="a2">Yes. Home delivery is free for every customer in our delivery area.</p></details>
+<details><summary data-i="q3">How do I pay?</summary><p data-i="a3">Pay cash when the milk arrives, or settle your bill monthly.</p></details>
+<details><summary data-i="q4">Which areas do you deliver to?</summary><p data-i="a4">We deliver in and around Ghulam Muhammad Abad, Faisalabad. Message us to confirm your address.</p></details>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="contact">
+<h2 data-i="ch">Get fresh milk at your door</h2>
+<p data-i="cp">Call or message us. We are happy to help.</p>
+<div class="cta"><a class="btn wa" href="#" data-i="wa">Order on WhatsApp</a><a class="btn alt" href="tel:+923289613699" data-i="call">Call 0328 9613699</a></div>
+<address data-i="addr">Ghulam Muhammad Abad, Faisalabad</address>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<p class="soc" id="soc"></p>
+<p data-i="foot">© 2026 Manghat Dairy Farm. All rights reserved.</p>
+</div></footer>
+
+<a class="fab wa" href="#" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3.5C9.1 3.5 3.5 8.9 3.5 15.6c0 2.3.7 4.5 1.900 6.300L3.500 28.500l6.800-1.800c1.700.9 3.600 1.400 5.700 1.400 6.900 0 12.500-5.400 12.500-12.100S22.900 3.500 16 3.500zm0 2.400c5.500 0 10 4.300 10 9.700S21.500 25.300 16 25.300c-1.800 0-3.500-.5-5-1.300l-.4-.2-3.200.9.900-3.100-.3-.4a9.500 9.500 0 0 1-1.500-5.200C6.500 10.200 10.900 5.900 16 5.900z"/></svg></a>
+
+<script>
+/* ---- Settings: edit these ---- */
+const PHONE = "923289613699";   // WhatsApp number, country code first, no + or spaces
+const PRICE = 200;              // Rs. per litre shown in the planner. Set your real price.
+const PLAY_URL = "";            // Paste the Google Play link here when the app is live
+const SOCIAL = { Facebook: "", Instagram: "" }; // Paste page links; empty ones stay hidden
+/* ------------------------------ */
+const UR = {brand:"منگھٹ ڈیری فارم",n1:"ہمیں کیوں چنیں",n2:"طریقہ کار",n3:"دودھ کا منصوبہ",n4:"سوالات",wa:"واٹس ایپ پر آرڈر کریں",
+h1:"تازہ فارمی دودھ، ہر صبح آپ کے دروازے پر۔",lead:"صرف تازہ دودھ، غلام محمد آباد میں ہمارے فارم سے سیدھا آپ تک۔ مفت ڈیلیوری، اور ادائیگی دودھ ملنے پر۔",
+app:"ایپ حاصل کریں",appsoon:"ایپ جلد آ رہی ہے",p1:"مفت ہوم ڈیلیوری",p2:"کیش آن ڈیلیوری",p3:"لائیو ڈیلیوری ٹریکنگ",
+t1:"آپ کا دودھ راستے میں ہے",t2:"لائیو ٹریکنگ کا نمونہ",t3:"3 گھر باقی",
+whyh:"خاندان منگھٹ ڈیری کو کیوں چنتے ہیں",w1:"ایک ہی چیز، بہترین انداز میں",w1p:"ہم صرف تازہ دودھ بیچتے ہیں، اس لیے ہماری پوری توجہ اسی پر ہے۔",
+w2:"مفت ہوم ڈیلیوری",w2p:"بغیر کسی اضافی چارجز کے آپ کے دروازے تک۔",w3:"دودھ ملنے پر ادائیگی",w3p:"کیش آن ڈیلیوری۔ نہ کارڈ، نہ پیشگی ادائیگی۔",
+w4:"اپنا دودھ ٹریک کریں",w4p:"ہماری ایپ میں اپنی ڈیلیوری نقشے پر دیکھیں۔",
+howh:"طریقہ کار",s1:"ایپ ڈاؤن لوڈ کریں",s1p:"اپنے موبائل نمبر سے سائن اپ کریں۔",s2:"اپنا دودھ منتخب کریں",s2p:"روزانہ کی مقدار طے کریں یا ایک بار آرڈر کریں۔",
+s3:"ڈیلیوری ٹریک کریں",s3p:"ڈیلیوری مین کو اپنی طرف آتے دیکھیں۔",s4:"ملنے پر ادائیگی کریں",s4p:"نقد ادا کریں یا ماہانہ حساب کریں۔ آپ کا بل ہمیشہ ایپ میں ہوگا۔",
+planh:"اپنے ماہانہ دودھ کا اندازہ لگائیں",l1:"روزانہ لیٹر",l2:"فی لیٹر قیمت (روپے)",l3:"30 دن کا اندازاً خرچ",l4:"یہ صرف اندازہ ہے۔ حتمی بل آپ کو ملنے والی ڈیلیوریز کے مطابق ہوگا۔",
+abh:"ہمارے فارم سے آپ کے گھر تک",ab1:"منگھٹ ڈیری فارم ڈاکٹر قربان علی منگھٹ کی زیرِ نگرانی غلام محمد آباد، فیصل آباد میں قائم ہے۔ ہماری توجہ ایک ہی چیز پر ہے: ایمانداری اور خلوص کے ساتھ تازہ دودھ۔",
+ab2:"اب ہم ڈیجیٹل ہو رہے ہیں۔ آسان آرڈر، واضح بل اور لائیو ڈیلیوری ٹریکنگ، سب ایک ایپ میں۔",own:"ڈاکٹر قربان علی منگھٹ، مالک",
+faqh:"آپ کے سوالات",q1:"آرڈر کیسے کروں؟",a1:"آج ہی واٹس ایپ پر پیغام کریں۔ جلد آپ ہماری ایپ سے بھی آرڈر کر سکیں گے۔",
+q2:"کیا ڈیلیوری واقعی مفت ہے؟",a2:"جی ہاں۔ ہماری ڈیلیوری حدود میں ہر صارف کے لیے ہوم ڈیلیوری مفت ہے۔",q3:"ادائیگی کیسے کروں؟",a3:"دودھ ملنے پر نقد ادا کریں، یا ماہانہ حساب کریں۔",
+q4:"آپ کن علاقوں میں ڈیلیوری کرتے ہیں؟",a4:"ہم غلام محمد آباد، فیصل آباد اور اس کے آس پاس ڈیلیوری کرتے ہیں۔ اپنا پتہ کنفرم کرنے کے لیے پیغام کریں۔",
+ch:"تازہ دودھ اپنے دروازے پر پائیں",cp:"کال یا پیغام کریں۔ ہم مدد کے لیے حاضر ہیں۔",call:"کال کریں 0328 9613699",addr:"غلام محمد آباد، فیصل آباد",foot:"© 2026 منگھٹ ڈیری فارم۔ جملہ حقوق محفوظ ہیں۔"};
+const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+const EN = {}; $$("[data-i]").forEach(e => EN[e.dataset.i] = e.textContent);
+EN.appsoon = "App coming soon";
+let lang = "en";
+const wa = () => "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(lang === "ur" ? "السلام علیکم، میں تازہ دودھ آرڈر کرنا چاہتا ہوں۔" : "Hello, I would like to order fresh milk.");
+function calc(){
+  const l = +$("#lit").value, p = +$("#price").value || 0;
+  $("#litv").textContent = l;
+  $("#tot").textContent = "Rs. " + Math.round(l * p * 30).toLocaleString("en-PK");
+}
+function setLang(l){
+  lang = l; const D = l === "ur" ? UR : EN;
+  document.documentElement.lang = l; document.documentElement.dir = l === "ur" ? "rtl" : "ltr";
+  $$("[data-i]").forEach(e => e.textContent = D[e.dataset.i]);
+  $("#lang").textContent = l === "ur" ? "English" : "اردو";
+  $$(".wa").forEach(a => a.href = wa());
+  const app = $("#app");
+  if (PLAY_URL) { app.href = PLAY_URL; app.target = "_blank"; app.rel = "noopener"; }
+  else { app.textContent = D.appsoon; app.setAttribute("aria-disabled", "true"); app.removeAttribute("href"); }
+  try { localStorage.setItem("lang", l); } catch (e) {}
+}
+$("#lang").onclick = () => setLang(lang === "ur" ? "en" : "ur");
+$("#menu").onclick = () => { const o = $("#nav").classList.toggle("open"); $("#menu").setAttribute("aria-expanded", o); };
+$$("#nav a").forEach(a => a.onclick = () => $("#nav").classList.remove("open"));
+$("#lit").oninput = calc; $("#price").oninput = calc; $("#price").value = PRICE;
+$("#soc").innerHTML = Object.entries(SOCIAL).filter(([, u]) => u).map(([n, u]) => '<a href="' + u + '" target="_blank" rel="noopener">' + n + "</a>").join("");
+let saved = null; try { saved = localStorage.getItem("lang"); } catch (e) {}
+setLang(saved || ((navigator.language || "").toLowerCase().startsWith("ur") ? "ur" : "en")); calc();
+</script>
+</body>
+</html>
